@@ -8,3 +8,11 @@ body {
     margin: 0;
     background-color: white; /* Set the background to black */
   }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+

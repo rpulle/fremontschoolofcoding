@@ -2,14 +2,14 @@ import React from 'react'
 
 const HomeInfo = () => {
   return (
-    <div>
+    <div className='pb-11'>
         <h1
           className='text-center pt-20 font-bold text-6xl text-'
           style={{ fontFamily: 'Poppins, sans-serif' , color: '#273c60'}}
         >
           {'</ Fremont School of Coding >'}
         </h1>
-        <p className='text-center pt-10' style={{ maxWidth: '80%', margin: '0 auto' }}>
+        <p className='text-center pt-10 ' style={{ maxWidth: '80%', margin: '0 auto' }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
           laboris nisi ut aliquip ex ea commodo consequat.

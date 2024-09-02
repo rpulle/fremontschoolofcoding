@@ -8,7 +8,7 @@ import Aboutus from './components/Aboutus';
 import Contact from './components/contact';
 import Startclub from './components/Startclub';
 import Donate from './components/Donate';
-
+import Footer from './components/Footer';
 function App() {
   // const [count, setCount] = useState(0)
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/donate" element={<Donate/>} />
 
       </Routes>
+      <Footer/>
     </Router>
   )
 }
