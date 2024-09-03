@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import Home from './components/HomeInfo'
+import Home from './components/HomeInfo';
 import Navbar from './components/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ourteam from './components/Ourteam';
@@ -9,23 +9,32 @@ import Contact from './components/contact';
 import Startclub from './components/Startclub';
 import Donate from './components/Donate';
 import Footer from './components/Footer';
+
 function App() {
-  // const [count, setCount] = useState(0)
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Aboutus />} />
-        <Route path="/ourteam" element={<Ourteam />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/startclub" element={<Startclub/>} />
-        <Route path="/donate" element={<Donate/>} />
+      {/* Wrapper to handle layout */}
+      <div className="flex flex-col min-h-screen">
+        {/* Navbar */}
+        <Navbar />
 
-      </Routes>
-      <Footer/>
+        {/* Main Content Area */}
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<Aboutus />} />
+            <Route path="/ourteam" element={<Ourteam />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/startclub" element={<Startclub />} />
+            <Route path="/donate" element={<Donate />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
