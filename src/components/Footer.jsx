@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-[#273c60] text-white">
       <div className="container mx-auto text-right pr-5">
         <div className="py-4">
-          <p>&copy; 2024 Fremont School of Coding. All rights reserved.</p>
+          <p>&copy; 2024 Fremont School of Coding.</p>
           <ul className="flex justify-end space-x-4 mt-2">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
