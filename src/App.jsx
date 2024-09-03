@@ -19,16 +19,17 @@ function App() {
         <Navbar />
 
         {/* Main Content Area */}
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Aboutus />} />
-            <Route path="/ourteam" element={<Ourteam />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/startclub" element={<Startclub />} />
-            <Route path="/donate" element={<Donate />} />
-          </Routes>
-        </main>
+        <main className="flex-grow px-4 sm:px-6 lg:px-8">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<Aboutus />} />
+      <Route path="/ourteam" element={<Ourteam />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/startclub" element={<Startclub />} />
+      <Route path="/donate" element={<Donate />} />
+    </Routes>
+    </main>
+
 
         {/* Footer */}
         <Footer />
