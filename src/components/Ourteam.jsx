@@ -3,9 +3,6 @@ import Circle from '../assets/cirlce.png';
 
 const teamMembers = [
   { name: 'Rohit Pulle', role: 'Founder/President' },
-  { name: 'Rishab Jain', role: 'Senior VP/Co-Founder' },
-  { name: 'Aarav Dixit', role: 'Vice President' },
-  { name: 'Kaiden Ashvini', role: 'Curriculum Director' },
 ];
 
 const Ourteam = () => {

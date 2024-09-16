@@ -1,15 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Fsc from '../assets/fsc.png'
+import Fsc from '../assets/fsc.png';
+
 const Navbar = () => {
   return (
-    <header className='header'>
-      <div className="navbar bg-base-100 text-white" style={{ backgroundColor: '#273c60' }}>
-        <div className="flex-1">
+    <header className='header' style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <div className="navbar bg-base-100 text-zinc-50" style={{ 
+        backgroundColor: '#000000', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        width: '100%',
+        maxWidth: '1200px', /* Adjust the max width as needed */
+        padding: '0 1rem' /* Optional: Adjust padding as needed */
+      }}>
         <Link className="btn btn-ghost text-xl" to="/">
-        <img src={Fsc} alt="FSC" className="inline-block" style={{ height: '40px', width: 'auto' }} /> {/* Use the imported variable */}
+          {/* <img src={Fsc} alt="FSC" className="inline-block" style={{ height: '50px', width: 'auto' }} /> */}
+          {/* Use the imported variable */}
         </Link>
-        </div>
         <div className="flex-none lg:hidden">
           <button className="btn btn-square btn-ghost">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -18,14 +26,14 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-none">
-          <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Home</Link></li>
+          <ul className="menu menu-horizontal px-1" style={{ display: 'flex', alignItems: 'center', margin: 0, padding: 0 }}>
+            <li><Link to="/">Home</Link></li>
             <li>
               <details>
                 <summary>Get Involved</summary>
-                <ul className="bg-base-100 rounded-t-none p-2" style={{ backgroundColor: '#273c60' }}>
-                  <li><Link to ='/startclub'>Start a Club</Link></li>
-                  <li><Link to ='/donate'>Donate</Link></li>
+                <ul className="bg-base-100 rounded-t-none p-2" style={{ backgroundColor: '#000000' }}>
+                  <li><Link to='/startclub'>Start a Club</Link></li>
+                  <li><Link to='/donate'>Donate</Link></li>
                 </ul>
               </details>
             </li>
@@ -36,7 +44,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-  )
+  );
 };
 
 export default Navbar;
