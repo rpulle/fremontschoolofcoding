@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './components/HomeInfo';
-import Aboutus from './components/Aboutus';
+// import Aboutus from './components/Aboutus';
 import Ourteam from './components/Ourteam';
 import Contact from './components/Contact';
 import Startclub from './components/Startclub';
-import Donate from './components/Donate';
+// import Donate from './components/Donate';
 import Footer from './components/Footer';
-import BubbleBackground from './components/Bubblebackground';
+// import BubbleBackground from './components/Bubblebackground';
 
 function App() {
   return (
