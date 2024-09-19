@@ -9,12 +9,12 @@ const Ourteam = () => {
   return (
     <div className="flex flex-col items-center pt-10">
       <h1
-        className="text-center font-bold text-4xl"
-        style={{ fontFamily: 'Poppins, sans-serif', color: '#273c60' }}
+        className="text-center font-bold text-4xl text-slate-100"
+        style={{ fontFamily: 'Poppins, sans-serif'}}
       >
         {'</ MEET OUR TEAM >'}
       </h1>
-      <div className="grid grid-cols-2 gap-3 mt-10 pb-5 font-nanum">
+      <div className='text-slate-50'>
         {teamMembers.map((member, index) => (
           <div key={index} className="flex flex-col items-center">
             <img

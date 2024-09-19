@@ -1,23 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import Link from react-scroll for smooth scrolling
 import Fsc from '../assets/fsc.png';
 
 const Navbar = () => {
   return (
     <header className='header' style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-      <div className="navbar bg-base-100 text-zinc-50" style={{ 
-        backgroundColor: '#000000', 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
+      <div className="navbar bg-base-100 text-zinc-50" style={{
+        backgroundColor: '#000000',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
         maxWidth: '1200px', /* Adjust the max width as needed */
         padding: '0 1rem' /* Optional: Adjust padding as needed */
       }}>
-        <Link className="btn btn-ghost text-xl" to="/">
-          {/* <img src={Fsc} alt="FSC" className="inline-block" style={{ height: '50px', width: 'auto' }} /> */}
-          {/* Use the imported variable */}
-        </Link>
+        <ScrollLink
+          className="btn btn-ghost text-xl"
+          to="home-section" // This targets the "home-section"
+          smooth={true}
+          duration={500}
+        >
+        </ScrollLink>
+
         <div className="flex-none lg:hidden">
           <button className="btn btn-square btn-ghost">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,21 +29,34 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
         <div className="hidden lg:flex lg:flex-none">
           <ul className="menu menu-horizontal px-1" style={{ display: 'flex', alignItems: 'center', margin: 0, padding: 0 }}>
-            <li><Link to="/">Home</Link></li>
             <li>
-              <details>
-                <summary>Get Involved</summary>
-                <ul className="bg-base-100 rounded-t-none p-2" style={{ backgroundColor: '#000000' }}>
-                  <li><Link to='/startclub'>Start a Club</Link></li>
-                  <li><Link to='/donate'>Donate</Link></li>
-                </ul>
-              </details>
+              <ScrollLink to="home-section" smooth={true} duration={500}>
+                Home
+              </ScrollLink>
             </li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/ourteam">Our Team</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li>
+              <ScrollLink to="startclub-section" smooth={true} duration={500}>
+                Start a Club
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="about-section" smooth={true} duration={500}>
+                About Us
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="ourteam-section" smooth={true} duration={500}>
+                Our Team
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="contact-section" smooth={true} duration={500}>
+                Contact
+              </ScrollLink>
+            </li>
           </ul>
         </div>
       </div>

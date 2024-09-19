@@ -10,7 +10,8 @@
 /* Custom global styles */
 body {
     margin: 0;
-    background-color: #000000; /* Change to black if desired */
+    background-color: black; /* Change to black if desired */
+    
 }
 
 #root {
