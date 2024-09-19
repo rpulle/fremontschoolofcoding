@@ -13,7 +13,12 @@ const Startclub = () => {
           FSC provides all required materials and training.<br />
           6 months of coding experience required.
         </p>
-        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-cyan-300 text-black mt-4 lg:mt-0">APPLY HERE</button>
+        <a href="https://forms.gle/RTNQKWmAMRgHnb1R6" target="_blank" rel="noopener noreferrer">
+  <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-cyan-300 text-black mt-4 lg:mt-0">
+    APPLY HERE
+  </button>
+</a>
+
       </div>
       <div className="bg-cyan-100 rounded-3xl w-full max-w-4xl mx-auto p-6">
         <h1 className='text-left font-bold text-2xl text-black' style={{ fontFamily: 'Poppins, sans-serif' }}>

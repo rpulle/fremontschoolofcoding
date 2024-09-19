@@ -60,13 +60,13 @@ const Contact = () => {
             rows="4"
             name="message"  // Added name attribute
             placeholder="Type your message here"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm py-3 px-4 focus:border-[#273c60] focus:ring focus:ring-[#273c60]/50"
+            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm py-3 px-4 focus:bg-cyan-800 focus:ring focus:ring-[#273c60]/50"
             required
           />
         </label>
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-cyan-300 text-black font-semibold rounded-md hover:bg-[#334c76] focus:outline-none focus:ring-2 focus:ring-[#273c60]/50"
+          className="w-full py-2 px-4 bg-cyan-300 text-black font-semibold rounded-md hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-[#273c60]/50"
         >
           Send
         </button>

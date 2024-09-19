@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // Import Link from react-scroll for smooth scrolling
+import { Link as RouterLink } from 'react-router-dom'; // For routing
 import Fsc from '../assets/fsc.png';
 
 const Navbar = () => {
@@ -34,28 +35,26 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1" style={{ display: 'flex', alignItems: 'center', margin: 0, padding: 0 }}>
             <li>
               <ScrollLink to="home-section" smooth={true} duration={500}>
-                Home
+                <RouterLink to="/">Home</RouterLink>
               </ScrollLink>
             </li>
             <li>
               <ScrollLink to="startclub-section" smooth={true} duration={500}>
-                Start a Club
+              <RouterLink to="/">Start a Club</RouterLink>
               </ScrollLink>
             </li>
+            {/* <li>
+              <RouterLink to="/about-us">About Us</RouterLink>
+            </li> */}
             <li>
-              <ScrollLink to="about-section" smooth={true} duration={500}>
-                About Us
-              </ScrollLink>
+              <RouterLink to="/our-team">Our Team</RouterLink>
             </li>
             <li>
-              <ScrollLink to="ourteam-section" smooth={true} duration={500}>
-                Our Team
-              </ScrollLink>
-            </li>
-            <li>
-              <ScrollLink to="contact-section" smooth={true} duration={500}>
+              <RouterLink to="/" onClick={() => setTimeout(() => {
+                document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+              }, 0)}>
                 Contact
-              </ScrollLink>
+              </RouterLink>
             </li>
           </ul>
         </div>
