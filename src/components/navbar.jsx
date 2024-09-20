@@ -67,14 +67,18 @@ const Navbar = () => {
           <div className="lg:hidden">
             <ul className="menu menu-vertical px-1" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', margin: 0, padding: 0 }}>
               <li>
-                <ScrollLink to="home-section" smooth={true} duration={500}>
+                <RouterLink to="/" onClick={() => setTimeout(() => {
+                  document.getElementById('home-section').scrollIntoView({ behavior: 'smooth' });
+                }, 0)}>
                   Home
-                </ScrollLink>
+                </RouterLink>
               </li>
               <li>
-                <ScrollLink to="startclub-section" smooth={true} duration={500}>
+                <RouterLink to="/" onClick={() => setTimeout(() => {
+                  document.getElementById('startclub-section').scrollIntoView({ behavior: 'smooth' });
+                }, 0)}>
                   Start a Club
-                </ScrollLink>
+                </RouterLink>
               </li>
               <li>
                 <RouterLink to="/our-team">Our Team</RouterLink>
