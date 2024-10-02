@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/fremontschoolofcoding">
       <div className="flex flex-col min-h-screen">
         <Navbar />
 

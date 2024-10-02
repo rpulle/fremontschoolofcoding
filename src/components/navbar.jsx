@@ -41,12 +41,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1" style={{ display: 'flex', alignItems: 'center', margin: 0, padding: 0 }}>
             <li>
               <ScrollLink to="home-section" smooth={true} duration={500}>
-                <RouterLink to="/">Home</RouterLink>
+                Home
               </ScrollLink>
             </li>
             <li>
               <ScrollLink to="startclub-section" smooth={true} duration={500}>
-                <RouterLink to="/">Start a Club</RouterLink>
+                Start a Club
               </ScrollLink>
             </li>
             <li>
@@ -67,18 +67,14 @@ const Navbar = () => {
           <div className="lg:hidden">
             <ul className="menu menu-vertical px-1" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', margin: 0, padding: 0 }}>
               <li>
-                <RouterLink to="/" onClick={() => setTimeout(() => {
-                  document.getElementById('home-section').scrollIntoView({ behavior: 'smooth' });
-                }, 0)}>
+                <ScrollLink to="home-section" smooth={true} duration={500}>
                   Home
-                </RouterLink>
+                </ScrollLink>
               </li>
               <li>
-                <RouterLink to="/" onClick={() => setTimeout(() => {
-                  document.getElementById('startclub-section').scrollIntoView({ behavior: 'smooth' });
-                }, 0)}>
+                <ScrollLink to="startclub-section" smooth={true} duration={500}>
                   Start a Club
-                </RouterLink>
+                </ScrollLink>
               </li>
               <li>
                 <RouterLink to="/our-team">Our Team</RouterLink>
